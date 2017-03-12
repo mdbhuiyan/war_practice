@@ -17,7 +17,7 @@ class Deck
   end
 
   def deal(player1, player2)
-    # cards.shuffle!
+    cards.shuffle!
     until cards.empty?
       player1.take_card(cards.shift)
       player2.take_card(cards.shift)
@@ -29,7 +29,7 @@ class Deck
   end
 
   def empty?
-    @cards.length == 0
+    count == 0
   end
 
   private

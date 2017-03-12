@@ -1,5 +1,6 @@
 require 'card'
 require 'player'
+require 'rspec'
 
 describe Card do
   subject(:card1) { Card.new(:clubs, :three) }

@@ -10,7 +10,6 @@ class Game
 
   def initialize(player1 = Player.new("Bob"), player2 = Player.new("Frank"))
     @player1, @player2 = player1, player2
-    @winner = nil
     @cards_in_play = []
   end
 
@@ -110,5 +109,5 @@ class Game
 end
 
 if __FILE__ == $PROGRAM_NAME
-  Game.new(Player.new("Davos Seaworth"), ComputerPlayer.new("Tyrion Lannister")).play
+  Game.new(Player.new("Daenerys Targaryen"), ComputerPlayer.new("Tyrion Lannister")).play
 end

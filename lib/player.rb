@@ -10,7 +10,7 @@ require 'io/console'
     @cards = []
   end
 
-  def take_card(card) 
+  def take_card(card)
     @cards << card
   end
 
